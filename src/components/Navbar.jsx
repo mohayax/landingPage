@@ -1,4 +1,5 @@
 import logo  from '../assets/logo.svg'
+import { RxHamburgerMenu } from "react-icons/rx";
 
 
 const Navbar = () => {
@@ -9,11 +10,11 @@ const Navbar = () => {
                 <img src={logo} alt="" />
             </div>
             <div className="hidden md:flex space-x-6">
-                <a href="#">Pricing</a>
-                <a href="#">Product</a>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Community</a>
+                <a className='hover:text-darkGrayishBlue' href="#">Pricing</a>
+                <a className='hover:text-darkGrayishBlue' href="#">Product</a>
+                <a className='hover:text-darkGrayishBlue' href="#">About Us</a>
+                <a className='hover:text-darkGrayishBlue' href="#">Careers</a>
+                <a className='hover:text-darkGrayishBlue' href="#">Community</a>
             </div>
 
             <a href="" className="hidden md:block bg-brightRed
