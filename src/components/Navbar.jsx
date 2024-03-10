@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import logo  from '../assets/logo.svg'
 import { RxHamburgerMenu } from "react-icons/rx";
 
 
 const Navbar = () => {
+  const [open, setOPen] = useState(false)
+  
   return (
     <nav className="relative container mx-auto p-6">
         <div className="flex items-center justify-between">
@@ -16,7 +19,7 @@ const Navbar = () => {
                 <a className='hover:text-darkGrayishBlue' href="#">Careers</a>
                 <a className='hover:text-darkGrayishBlue' href="#">Community</a>
             </div>
-
+            <RxHamburgerMenu className='flex-end text-black text-3xl md:hidden' />
             <a href="" className="hidden md:block bg-brightRed
              rounded-full baseline text-white p-3 px-6 pt-2 hover:bg-brightRedLight">Get Started</a>
         </div>
